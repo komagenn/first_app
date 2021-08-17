@@ -1,7 +1,0 @@
-<h1>新規投稿ページ</h1>
-<%= form_with url: "/posts", method: :post, local: true do |form| %>
- get 'posts',to:'post#new'
- get 'posts/new',to:'post#new'
-  <%= form.text_field :content %>
-  <%= form.submit '投稿する' %>
-<% end %>
